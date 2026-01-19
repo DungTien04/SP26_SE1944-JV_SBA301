@@ -1,10 +1,10 @@
 import React from "react";
-
 import PublicLayout from "../layouts/PublicLayout";
 import PublicHomePage from "../../features/public-site/pages/PublicHomePage";
-import PublicCourseList from "../../features/courses/components/PublicCourseList";
 import LoginPage from "../../features/auth/pages/LoginPage";
 import NotFound from "../../shared/components/NotFound";
+import PublicCoursePage from "../../features/courses/pages/PublicCoursePage";
+import courseService from "../../features/courses/services/course.service";
 
 const publicRoutes = [
   { path: "/login", element: <LoginPage /> },
@@ -14,9 +14,8 @@ const publicRoutes = [
     element: <PublicLayout />,
     children: [
       { index: true, element: <PublicHomePage /> },
-      { path: "courses", element: <PublicCourseList />,
-        // loader: // 
-
+      { path: "courses", element: <PublicCoursePage />,
+        loader: courseService.findAll
        },
     ],
   },

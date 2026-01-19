@@ -1,0 +1,74 @@
+{
+    "courses": [
+        {
+            "courseId": "C01",
+            "title": "React JS Basic",
+            "studentNumber": 120,
+            "price": 80,
+            "img": "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg"
+        },
+        {
+            "courseId": "C02",
+            "title": "JavaScript Advanced",
+            "studentNumber": 95,
+            "price": 90,
+            "img": "https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg"
+        },
+        {
+            "courseId": "C03",
+            "title": "Node.js Backend",
+            "studentNumber": 60,
+            "price": 110,
+            "img": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg"
+        },
+        {
+            "courseId": "C04",
+            "title": "HTML & CSS Master",
+            "studentNumber": 200,
+            "price": 50,
+            "img": "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg"
+        },
+        {
+            "courseId": "C05",
+            "title": "Gen AI",
+            "studentNumber": 0,
+            "price": 100,
+            "img": "https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg"
+        },
+        {
+            "courseId": "C06",
+            "title": "Python for Beginners",
+            "studentNumber": 150,
+            "price": 70,
+            "img": "https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg"
+        },
+        {
+            "courseId": "C07",
+            "title": "Data Structures & Algorithms",
+            "studentNumber": 85,
+            "price": 120,
+            "img": "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg"
+        },
+        {
+            "courseId": "C08",
+            "title": "UI/UX Design",
+            "studentNumber": 110,
+            "price": 95,
+            "img": "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg"
+        },
+        {
+            "courseId": "C09",
+            "title": "DevOps Fundamentals",
+            "studentNumber": 40,
+            "price": 130,
+            "img": "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg"
+        },
+        {
+            "courseId": "C10",
+            "title": "Mobile App with React Native",
+            "studentNumber": 75,
+            "price": 105,
+            "img": "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg"
+        }
+    ]
+}
