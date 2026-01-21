@@ -5,6 +5,8 @@ import LoginPage from "../../features/auth/pages/LoginPage";
 import NotFound from "../../shared/components/NotFound";
 import PublicCoursePage from "../../features/courses/pages/PublicCoursePage";
 import courseService from "../../features/courses/services/course.service";
+import MainCourseList from "../../features/courses/components/MainCourseList";
+import CourseDetail from "../../features/courses/pages/CourseDetail";
 
 const publicRoutes = [
   { path: "/login", element: <LoginPage /> },
@@ -14,9 +16,18 @@ const publicRoutes = [
     element: <PublicLayout />,
     children: [
       { index: true, element: <PublicHomePage /> },
-      { path: "courses", element: <PublicCoursePage />,
-        loader: courseService.findAll
-       },
+      {
+        path: "courses",
+        element: <PublicCoursePage />,
+        children: [
+          {
+            index: true,
+            element: <MainCourseList />,
+            loader: courseService.findAll,
+          },
+          { path: ":id", element: <CourseDetail /> },
+        ],
+      },
     ],
   },
   { path: "*", element: <NotFound /> },

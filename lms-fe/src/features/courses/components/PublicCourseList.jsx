@@ -41,7 +41,7 @@ const PublicCourseList = ({courses}) => {
           <p>No record!</p>
         ) : (
           courses.map((c) => (
-            <div key={c.courseId} className="col-md-4 col-xl-4 col-lg-4 mb-3">
+            <div key={c.id} className="col-md-4 col-xl-4 col-lg-4 mb-3">
               <CourseCard course={c} enrollCourse={enrollCourse} />
             </div>
           ))
