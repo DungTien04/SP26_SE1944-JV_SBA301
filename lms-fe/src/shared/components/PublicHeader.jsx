@@ -8,6 +8,7 @@ import {
   NavDropdown,
   Row,
 } from "react-bootstrap";
+import { Cart3, CartFill } from "react-bootstrap-icons";
 import logo from "@/assets/logo.svg";
 import "@/styles/header.css";
 import {
@@ -21,7 +22,7 @@ const PublicHeader = () => {
   const { user } = useContext(AuthStateContext);
   const { logout } = useContext(AuthActionsContext);
 
-  const navLinkCustom = ({isActive}) =>({
+  const navLinkCustom = ({ isActive }) => ({
     borderBottom: isActive ? "2px solid #0dcaf0" : "none",
   });
 
@@ -53,34 +54,64 @@ const PublicHeader = () => {
                 // onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
               >
                 <Nav.Item>
-                  <Nav.Link as={NavLink} to="/" end className="custom-nav" style={navLinkCustom}>
+                  <Nav.Link
+                    as={NavLink}
+                    to="/"
+                    end
+                    className="custom-nav"
+                    style={navLinkCustom}
+                  >
                     Home
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link as={NavLink} to="/courses" className="custom-nav" style={navLinkCustom}>
+                  <Nav.Link
+                    as={NavLink}
+                    to="/courses"
+                    className="custom-nav"
+                    style={navLinkCustom}
+                  >
                     Courses
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-
-                  <Nav.Link as={NavLink} to="/mentor" className="custom-nav" style={navLinkCustom}>
+                  <Nav.Link
+                    as={NavLink}
+                    to="/mentor"
+                    className="custom-nav"
+                    style={navLinkCustom}
+                  >
                     Mentor
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link as={NavLink} to="/group"  className="custom-nav" style={navLinkCustom}>
+                  <Nav.Link
+                    as={NavLink}
+                    to="/group"
+                    className="custom-nav"
+                    style={navLinkCustom}
+                  >
                     Group
                   </Nav.Link>
                 </Nav.Item>
 
                 <Nav.Item>
-                  <Nav.Link as={NavLink} to="/testimonial" className="custom-nav" style={navLinkCustom}>
+                  <Nav.Link
+                    as={NavLink}
+                    to="/testimonial"
+                    className="custom-nav"
+                    style={navLinkCustom}
+                  >
                     Testimonial
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link as={NavLink} to="/docs" className="custom-nav" style={navLinkCustom}>
+                  <Nav.Link
+                    as={NavLink}
+                    to="/docs"
+                    className="custom-nav"
+                    style={navLinkCustom}
+                  >
                     Docs
                   </Nav.Link>
                 </Nav.Item>
@@ -88,6 +119,8 @@ const PublicHeader = () => {
             </Col>
 
             <Col md={3} className="d-flex justify-content-center">
+              <Cart3 className="me-4" width={25} height={25} />
+
               {user ? (
                 <Nav
                   variant="pills"
@@ -96,7 +129,7 @@ const PublicHeader = () => {
                     handleSelect(eventKey);
                   }}
                 >
-                  <NavDropdown title={user.name} id="nav-dropdown">
+                  <NavDropdown title={String(user.firstName).concat(" "+ user.lastName)}  id="nav-dropdown">
                     <NavDropdown.Item eventKey="signout">
                       Sign Out
                     </NavDropdown.Item>
@@ -120,9 +153,16 @@ const PublicHeader = () => {
                       Sign In
                     </Link>
                   </Button>
-                  <Button variant="outline-primary" style={{ width: "120px" }}>
-                    Sign Up
-                  </Button>
+                  <Link to="/register" className="text-decoration-none">
+                    <Button
+                      type="button"
+                      to="/register"
+                      variant="outline-primary"
+                      style={{ width: "120px", height: "100%" }}
+                    >
+                      Sign Up
+                    </Button>
+                  </Link>
                 </>
               )}
             </Col>

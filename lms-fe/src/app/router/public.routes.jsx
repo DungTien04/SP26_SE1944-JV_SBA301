@@ -7,10 +7,11 @@ import PublicCoursePage from "../../features/courses/pages/PublicCoursePage";
 import courseService from "../../features/courses/services/course.service";
 import MainCourseList from "../../features/courses/components/MainCourseList";
 import CourseDetail from "../../features/courses/pages/CourseDetail";
+import RegisterPage from "../../features/auth/pages/RegisterPage";
 
 const publicRoutes = [
   { path: "/login", element: <LoginPage /> },
-  // {path: "/register", element: <RegisterPage />},
+  {path: "/register", element: <RegisterPage />},
   {
     path: "/",
     element: <PublicLayout />,

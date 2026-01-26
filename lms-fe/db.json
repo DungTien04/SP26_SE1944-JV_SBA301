@@ -1,102 +1,172 @@
 {
-    "courses": [
-        {
-            "id": "C01",
-            "title": "React JS Basic",
-            "studentNumber": 120,
-            "price": 80,
-            "categoryId": "cat01",
-            "img": "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg"
-        },
-        {
-            "id": "C02",
-            "title": "JavaScript Advanced",
-            "studentNumber": 95,
-            "price": 90,
-            "categoryId": "cat01",
-            "img": "https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg"
-        },
-        {
-            "id": "C03",
-            "title": "Node.js Backend",
-            "studentNumber": 60,
-            "price": 110,
-            "categoryId": "cat01",
-            "img": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg"
-        },
-        {
-            "id": "C04",
-            "title": "HTML & CSS Master",
-            "studentNumber": 200,
-            "price": 50,
-            "categoryId": "cat01",
-            "img": "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg"
-        },
-        {
-            "id": "C05",
-            "title": "Gen AI",
-            "studentNumber": 0,
-            "price": 100,
-            "categoryId": "cat02",
-            "img": "https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg"
-        },
-        {
-            "id": "C06",
-            "title": "Python for Beginners",
-            "studentNumber": 150,
-            "price": 70,
-            "categoryId": "cat02",
-            "img": "https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg"
-        },
-        {
-            "id": "C07",
-            "title": "Data Structures & Algorithms",
-            "studentNumber": 85,
-            "price": 120,
-            "categoryId": "cat02",
-            "img": "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg"
-        },
-        {
-            "id": "C08",
-            "title": "UI/UX Design",
-            "studentNumber": 110,
-            "price": 95,
-            "categoryId": "cat01",
-            "img": "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg"
-        },
-        {
-            "id": "C09",
-            "title": "DevOps Fundamentals",
-            "studentNumber": 40,
-            "price": 130,
-            "categoryId": "cat04",
-            "img": "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg"
-        },
-        {
-            "id": "C10",
-            "title": "Mobile App with React Native",
-            "studentNumber": 75,
-            "price": 105,
-            "categoryId": "cat03",
-            "img": "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg"
-        }
-    ],
-    "categories": [
-        {
-            "id": "cat01",
-            "name": "Web Development"
-        },
-        {
-            "id": "cat02",
-            "name": "Data Science"
-        },
-        {
-            "id": "cat03",
-            "name": "Mobile Development"
-        },
-        {
-            "id": "cat04",
-            "name": "DevOps"
-        }
-    ]
+  "courses": [
+    {
+      "id": "C01",
+      "title": "React JS Basic",
+      "studentNumber": 120,
+      "price": 0,
+      "categoryId": "cat01",
+      "img": "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg"
+    },
+    {
+      "id": "C02",
+      "title": "JavaScript Advanced",
+      "studentNumber": 95,
+      "price": 90,
+      "categoryId": "cat01",
+      "img": "https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg"
+    },
+    {
+      "id": "C03",
+      "title": "Node.js Backend",
+      "studentNumber": 60,
+      "price": 110,
+      "categoryId": "cat01",
+      "img": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg"
+    },
+    {
+      "id": "C04",
+      "title": "HTML & CSS Master",
+      "studentNumber": 200,
+      "price": 50,
+      "categoryId": "cat01",
+      "img": "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg"
+    },
+    {
+      "id": "C05",
+      "title": "Gen AI",
+      "studentNumber": 0,
+      "price": 100,
+      "categoryId": "cat02",
+      "img": "https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg"
+    },
+    {
+      "id": "C06",
+      "title": "Python for Beginners",
+      "studentNumber": 150,
+      "price": 70,
+      "categoryId": "cat02",
+      "img": "https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg"
+    },
+    {
+      "id": "C07",
+      "title": "Data Structures & Algorithms",
+      "studentNumber": 85,
+      "price": 120,
+      "categoryId": "cat02",
+      "img": "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg"
+    },
+    {
+      "id": "C08",
+      "title": "UI/UX Design",
+      "studentNumber": 110,
+      "price": 95,
+      "categoryId": "cat01",
+      "img": "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg"
+    },
+    {
+      "id": "C09",
+      "title": "DevOps Fundamentals",
+      "studentNumber": 40,
+      "price": 130,
+      "categoryId": "cat04",
+      "img": "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg"
+    },
+    {
+      "id": "C10",
+      "title": "Mobile App with React Native",
+      "studentNumber": 75,
+      "price": 105,
+      "categoryId": "cat03",
+      "img": "https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg"
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat01",
+      "name": "Web Development"
+    },
+    {
+      "id": "cat02",
+      "name": "Data Science"
+    },
+    {
+      "id": "cat03",
+      "name": "Mobile Development"
+    },
+    {
+      "id": "cat04",
+      "name": "DevOps"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "firstName": "Hoang",
+      "lastName": "Minh",
+      "email": "admin@company.com",
+      "status": "ACTIVE",
+      "password": "admin123",
+      "avatar": "https://i.pravatar.cc/150?img=1"
+    },
+    {
+      "id": "2",
+      "firstName": "Lan",
+      "lastName": "Nguyen",
+      "email": "lan.nguyen@company.com",
+      "status": "ACTIVE",
+      "password": "recruiter123",
+      "avatar": "https://i.pravatar.cc/150?img=5"
+    },
+    {
+      "id": "3",
+      "firstName": "Minh",
+      "lastName": "Tran",
+      "email": "minh.tran@company.com",
+      "status": "ACTIVE",
+      "password": "manager123",
+      "avatar": "https://i.pravatar.cc/150?img=8"
+    },
+    {
+      "id": "4",
+      "firstName": "Anh",
+      "lastName": "Le",
+      "email": "anh.le@company.com",
+      "status": "ACTIVE",
+      "password": "interviewer123",
+      "avatar": "https://i.pravatar.cc/150?img=12"
+    },
+    {
+      "id": "8a67",
+      "firstName": "Duy ",
+      "lastName": "Vu",
+      "email": "vu@gmail.com",
+      "status": "ACTIVE",
+      "password": "12345",
+      "avatar": "",
+      "confirmPassword": "12345"
+    },
+    {
+      "id": "70c8",
+      "firstName": "Long",
+      "lastName": "Tran",
+      "email": "tranlongceo@example.com",
+      "status": "ACTIVE",
+      "password": "12345",
+      "avatar": "",
+      "term": true,
+      "confirmPassword": "12345"
+    },
+    {
+      "id": "05e5",
+      "firstName": "Tuan",
+      "lastName": "Mai",
+      "email": "mai2@example.com",
+      "status": "ACTIVE",
+      "password": "123",
+      "avatar": "",
+      "term": true,
+      "confirmPassword": "123"
+    }
+  ]
 }
